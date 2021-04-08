@@ -1,0 +1,12 @@
+.container{
+    height: 100vh;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 13% 80% 7%;
+    grid-template-areas:
+    "header1 header1 header1 header1 header1"
+    "header-nav header-nav header-nav header-nav header-nav"
+    "                  "
+    "footer footer footer footer footer" ;
+}
