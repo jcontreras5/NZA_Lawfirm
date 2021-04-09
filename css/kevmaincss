@@ -1,0 +1,146 @@
+.container{
+    padding: 75px;
+    height: 100vh;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 15% 7% 80% 3%;
+    grid-template-areas:
+    "header1 header1 header1 header1 header1"
+    "header_nav header_nav header_nav header_nav header_nav"
+    "sidebar_left body body body sidebar_right"
+    "footer footer footer footer footer" ;
+}
+
+/* Header Begins Here */
+
+.header1{
+    grid-area:header1;
+    margin-left: 25px;
+}
+
+#loginbutton{
+    float: right;
+    margin-right: 50px;
+}
+
+#sampleimage{
+    position: relative;
+    grid-area: header1;
+    margin-top: 1vw;
+}
+
+/* Nav Bar Begins Here */
+
+.header_nav{
+    margin: auto;
+    grid-area:header_nav;
+    padding-top: 10px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.header_nav a{
+    margin: 4vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+/* Side Bar Left Begins Here */
+
+.sidebar_left {
+    grid-area:sidebar_left;
+    padding: 10px;
+    color: white;
+    background-color: rgb(153, 23, 45);
+    justify-content: center;
+    border-bottom: 1px black;
+}
+
+div>h2{
+    border-bottom: 3px solid white;
+}
+
+#folderpen{
+    border: 2px white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#classright{
+    font-size: 20px;
+}
+
+/* Side Bar Right Begins Here */
+
+.sidebar_right {
+    grid-area:sidebar_right;
+    padding: 10px;
+    color: maroon;
+    background-color: rgb(219, 212, 201);
+    justify-content: center;
+    border-bottom: 1px black;
+}
+
+#where_we_work{
+    font-weight: bold;
+}
+
+#whereimage{
+    border: 2px solid black;
+    grid-area: sidebar_right;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    height: 20%;
+}
+
+#news_and_events{
+    border: 1px solid black;
+    grid-area: sidebar_right;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    height: 20%;
+}
+
+#news{
+    color: black;
+}
+
+/* Body Begins Here */
+
+.body{
+    grid-area:body;
+    padding: 10px;
+    border-bottom: 1px black;
+}
+
+#rotaryphone{
+    grid-area: body;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+#office_hours,#street_address,#suitenumber,#city,#phonenumber,#faxnumber,#email{
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+/* Footer Begins Here */
+
+.footer{
+    grid-area:footer;
+    margin: auto auto;
+    padding-top: 1vw;
+    border-top: 3px solid black;}
+
+.footer a{
+    margin:4vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
