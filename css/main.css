@@ -6,7 +6,37 @@
     grid-template-rows: 10% 7% 80% 3%;
     grid-template-areas:
     "header1 header1 header1 header1 header1"
-    "header-nav header-nav header-nav header-nav header-nav"
-    "                  "
+    /* Delete or Add as needed */
+    "header_nav header_nav header_nav header_nav header_nav"
+    "sidebar_left body body body sidebar_right"
     "footer footer footer footer footer" ;
 }
+
+/* Delete or Add as needed */
+.header1{grid-area:header1;}
+
+.header_nav{grid-area:header_nav;}
+
+.sidebar_left{grid-area:sidebar_left;}
+
+.body{grid-area:body;}
+
+.sidebar_right {grid-area:sidebar_right;}
+
+.footer{grid-area:footer;}
+
+/* .header1,.header_nav,.sidebar_left,.body,.sidebar_right,.footer{border: 1px solid black;} */
+
+/* FOOTER NAV */
+.footer{
+    margin: auto auto;
+    padding-top: 10px;
+    border-top: 1px solid black;
+}
+
+.footer>a{
+    margin:4vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+/* FOOTER NAV END*/
