@@ -1,6 +1,6 @@
 body{
     padding: 2% 10% ;
-    height:100vh;
+    height:90vh;
     width: auto;
     background-image: url(https://www.designyourway.net/blog/wp-content/uploads/2018/09/wood_texture3846-1.jpg);
     background-position: center;
@@ -9,7 +9,7 @@ body{
 
 .container{
     background-color: white;
-    height: inherit;
+    height:inherit;
     width: auto;
  /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓   CSS GRID   ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
     display: grid;
@@ -37,12 +37,14 @@ body{
 
 .footer{grid-area:footer;}
 
-.header1,.header_nav,.sidebar_left,.body,.sidebar_right,.footer{border: 1px solid black;} 
+/* .header1,.header_nav,.sidebar_left,.body,.sidebar_right,.footer,.table1,.table2{
+    border: 1px solid black; */
+} 
 
 /* FOOTER NAV */
 .footer{
     width: 90%;
-    margin:auto auto ;
+    margin:0 auto ;
     padding-top:.6%;
     border-top: 1px solid black;
 }
@@ -54,6 +56,8 @@ body{
 }
 
 .center>a,.center>span{
+    font-weight:bolder;
+    font:;
     text-decoration: none;
     margin: auto 10px;
     
@@ -64,7 +68,30 @@ body{
 
 /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓  Jonathan CSS ↓↓↓↓↓↓↓↓↓↓↓↓↓↓  */
 
+.body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20% 80%;
+    grid-template-areas:
+    "paragraph paragraph paragraph"
+    "table1 table1 table2";
+}
+
+.paragraph{
+    grid-area:paragraph ;
+}
+.table1{
+    grid-area:table1 ;
+}
+.table2{
+    grid-area:table2 ;
+}
+
 .sidebar_left{
-    margin: 0  0 0 2%;
+    margin: 0  6% 0 10%;
+}
+
+table{
+    width: 100%;
 }
 
