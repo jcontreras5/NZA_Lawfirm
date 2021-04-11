@@ -1,0 +1,76 @@
+
+body{
+    padding: 2% 10% ;
+    height:90vh;
+    width: auto;
+    background-image: url(/Images/nza_background.jpg);
+    background-position: center;
+}
+
+
+.container{
+    background-color: white;
+    height:inherit;
+    width: auto;
+ /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓   CSS GRID   ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10% 7% 78% 5%;
+    grid-template-areas:
+    "header1 header1 header1 header1 header1"
+    /*↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Modify  as needed ↓↓↓↓↓↓↓↓↓↓↓↓ */
+    "header_nav header_nav header_nav header_nav header_nav"
+    /* ------------- */
+    "body body body body sidebar_right"
+    "footer footer footer footer footer" ;
+}
+.header1,.header_nav,.sidebar_left,.body,.sidebar_right,.footer{border: 1px solid black;}
+
+/* Delete or Add as needed */
+.header1{grid-area:header1;}
+
+.header_nav{
+    grid-area:header_nav;
+    width: auto;
+    background-color: #D6EFFF;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navlink {
+    text-decoration: none;
+    color: black;
+    padding: 2vw;
+}
+
+.body{
+    grid-area:body;
+}
+
+.sidebar_right {grid-area:sidebar_right;}
+
+.footer{grid-area:footer;}
+
+
+/* FOOTER NAV */
+.footer{
+    margin: auto auto;
+    padding-top: 10px;
+    border-top: 1px solid black;
+}
+
+.footer>a{
+    margin:4vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.list{
+    list-style-type: none;
+    margin: 0 2vw;
+    font-size: 3vh;
+}
+
+
+
