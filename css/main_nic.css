@@ -148,4 +148,9 @@ body{
     margin-top: 2px;
 }
 
+.sidebar_text{display:block;
+    grid-area: sidebar_right;
 
+    margin-top: 450px;
+    
+}
