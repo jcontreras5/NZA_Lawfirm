@@ -1,0 +1,113 @@
+
+body{
+    padding: 2% 10% ;
+    height:90vh;
+    width: auto;
+    background-image: url(/Images/nza_background.jpg);
+    background-position: center;
+}
+
+
+
+.container{
+    background-color: white;
+    height:inherit;
+    width: auto;
+    padding: 5%;
+ /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓   CSS GRID   ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 15% 9% 79% 40%;
+    grid-template-areas:
+    "header1 header1 header1 header1 header1"
+    "header_nav header_nav header_nav header_nav header_nav"
+    "body body body body sidebar_right"
+    "footer footer footer footer footer"
+    
+}
+.header_nav,.sidebar_right,{border: 2px solid black;}
+
+/* Delete or Add as needed */
+.header1{
+    grid-area: header1;
+    margin-bottom: 20px;
+}
+
+.logo-img{
+    padding-bottom: 20%;
+}
+
+.header_nav{
+    grid-area:header_nav;
+    display: block;
+    background-color: white;
+
+}
+
+.navbar {
+    display: flex;
+
+}
+
+.navlink {
+    text-decoration: none;
+    color: black;
+    padding: 2vw;
+}
+
+.body{
+    grid-area:body;
+    margin-top: 50px;
+    
+}
+
+.responsive{
+    max-width: 100%;
+    height: auto;
+}
+
+.sidebar_right {
+    grid-area:sidebar_right;
+    background-color: hsl(14, 82%, 26%);
+    color: white ;
+    overflow-y: auto;
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    font-size: small;
+    margin-top: 50px;
+    height: auto;
+
+}
+
+.newsfeed {
+    text-decoration: underline;
+    
+}
+
+
+/* FOOTER NAV */
+.footer{
+    grid-area:footer;
+    padding-top: 10px;
+    
+}
+.footer>a{
+    margin:4vw;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: black;
+
+}
+.list{
+    list-style-type: none;
+    margin: 0 2vw;
+    font-size: 3vh;
+}
+
+.footbar {
+    display: ;
+}
+
+
