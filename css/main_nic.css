@@ -1,4 +1,3 @@
-
 body{
     padding: 2% 10% ;
     height:90vh;
@@ -13,16 +12,18 @@ body{
     background-color: white;
     height:inherit;
     width: auto;
-    padding: 5%;
+    padding: 7%;
+    padding-bottom: 20%;
  /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓   CSS GRID   ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 15% 9% 79% 40%;
+    grid-template-rows: 15% 5% 78% 25% 10%;
     grid-template-areas:
     "header1 header1 header1 header1 header1"
     "header_nav header_nav header_nav header_nav header_nav"
-    "body body body body sidebar_right"
-    "footer footer footer footer footer"
+    "body body body sidebar_right sidebar_right"
+    "footer footer footer sidebar_text sidebar_text"
+    "foot_bar foot_bar foot_bar foot_bar foot_bar"
     
 }
 .header_nav,.sidebar_right,{border: 2px solid black;}
@@ -30,11 +31,11 @@ body{
 /* Delete or Add as needed */
 .header1{
     grid-area: header1;
-    margin-bottom: 20px;
 }
 
 .logo-img{
     padding-bottom: 20%;
+
 }
 
 .header_nav{
@@ -52,7 +53,8 @@ body{
 .navlink {
     text-decoration: none;
     color: black;
-    padding: 2vw;
+    padding: 1vw;
+    font-size: medium;
 }
 
 .body{
@@ -72,42 +74,49 @@ body{
     color: white ;
     overflow-y: auto;
     margin: 20px;
+    margin-top: 50px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
+    padding-bottom: 20px;
     font-size: small;
-    margin-top: 50px;
-    height: auto;
-
 }
 
 .newsfeed {
-    text-decoration: underline;
-    
+    text-decoration: underline;  
 }
 
 
 /* FOOTER NAV */
 .footer{
     grid-area:footer;
-    padding-top: 10px;
+    padding-top: px;
     
 }
-.footer>a{
-    margin:4vw;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    color: black;
 
+.welcome {
+    font-size: smaller;
+}
+
+h5 {
+    font-size: small;
+}
+
+.address {
+    font-size: smaller;
 }
 .list{
-    list-style-type: none;
-    margin: 0 2vw;
+    display: inline;
+    margin: vw;
     font-size: 3vh;
+    padding-left: 60px
 }
 
 .footbar {
-    display: ;
+    grid-area:footbar;
 }
 
+.footlink {
+    display: inline-flex;
+}
 
