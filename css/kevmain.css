@@ -1,10 +1,20 @@
+body{
+    padding: 2% 10% ;
+    height:90vh;
+    width: auto;
+    background-image: url(/Images/nza_background.jpg);
+    background-position: center;
+}
+
 .container{
-    padding: 75px;
-    height: 100vh;
+    padding: 1%;
+    height: inherit;
+    background-color: white;
     width: auto;
     display: grid;
+    font-family: Arial, Helvetica, sans-serif;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 15% 7% 80% 3%;
+    grid-template-rows: 18% 7% 70% 5%;
     grid-template-areas:
     "header1 header1 header1 header1 header1"
     "header_nav header_nav header_nav header_nav header_nav"
@@ -14,34 +24,50 @@
 
 /* Header Begins Here */
 
-.header1{
+.header1{display: flex;
     grid-area:header1;
-    margin-left: 25px;
+    margin:0 auto 10px auto;
+    width: 90%;
+    justify-content: space-between;
 }
 
-#loginbutton{
+#loginbutton{ 
     float: right;
-    margin-right: 50px;
+    align-self: end;
+    height: 40px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;   
 }
 
-#sampleimage{
-    position: relative;
+#sampleimage{display: inline-flex;
     grid-area: header1;
-    margin-top: 1vw;
+    height: 75px;
+    width: 300px;
+    align-self:flex-end;
+    
 }
+
 
 /* Nav Bar Begins Here */
 
 .header_nav{
-    margin: auto;
+    display: flex;
     grid-area:header_nav;
-    padding-top: 10px;
+    width: 90%;
+    margin: auto auto;
+    padding: 15px 0;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
 }
 
-.header_nav a{
-    margin: 4vw;
+.header_nav>span{
+    font-size: 15px;
+}
+
+.header_nav>a{
+    margin: auto auto;
+    font-size: large;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
 }
@@ -51,6 +77,7 @@
 .sidebar_left {
     grid-area:sidebar_left;
     padding: 10px;
+    margin: 10px auto;
     color: white;
     background-color: rgb(153, 23, 45);
     justify-content: center;
@@ -76,6 +103,7 @@ div>h2{
 .sidebar_right {
     grid-area:sidebar_right;
     padding: 10px;
+    margin: 10px auto;
     color: maroon;
     background-color: rgb(219, 212, 201);
     justify-content: center;
@@ -114,6 +142,7 @@ div>h2{
 
 .body{
     grid-area:body;
+    margin:0 0 10px 0;
     padding: 10px;
     border-bottom: 1px black;
 }
@@ -134,13 +163,30 @@ div>h2{
 /* Footer Begins Here */
 
 .footer{
-    grid-area:footer;
-    margin: auto auto;
-    padding-top: 1vw;
-    border-top: 3px solid black;}
-
-.footer a{
-    margin:4vw;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
+    grid-area: footer;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    border-top: 2px solid black;
+    
 }
+
+.center{display: flex;
+    width:fit-content;
+    margin: .5% auto; 
+}
+
+.center>a{
+    text-decoration: none;
+    font-size: large;
+    margin: auto 35px;
+    color: black;
+    
+}
+
+.center>span{
+    font-size: larger;
+    color:gray;
+    margin-top: 2px;
+}
+
