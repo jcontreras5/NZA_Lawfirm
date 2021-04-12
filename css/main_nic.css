@@ -1,0 +1,143 @@
+body{
+    padding: 2% 10% ;
+    height:90vh;
+    width: auto;
+    background-image: url(/Images/nza_background.jpg);
+    background-position: center;
+}
+
+
+
+.container{
+    padding-bottom: 1%;
+    background-color: white;
+    height:inherit;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+ /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓   CSS GRID   ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 18% 7% 70% 5%;
+    grid-template-areas:
+    "header1 header1 header1 header1 header1"
+    "header_nav header_nav header_nav header_nav header_nav"
+    "body body body body sidebar_right"
+    "footer footer footer footer footer"
+    
+}
+
+
+/* Delete or Add as needed */
+/* Header Begins Here */
+
+.header1{display: flex;
+    grid-area:header1;
+    margin:0 auto 10px auto;
+    width: 90%;
+    justify-content: space-between;
+}
+
+#loginbutton{ 
+    float: right;
+    align-self: end;
+    height: 40px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;   
+}
+
+#sampleimage{display: inline-flex;
+    grid-area: header1;
+    height: 75px;
+    width: 300px;
+    align-self:flex-end;
+    
+}
+
+/* Nav Bar Begins Here */
+
+.header_nav{
+    display: flex;
+    grid-area:header_nav;
+    width: 90%;
+    margin: auto auto;
+    padding: 15px 0;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.header_nav>span{
+    font-size: 15px;
+}
+
+.header_nav>a{
+    margin: auto auto;
+    font-size: large;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+
+.body{
+    grid-area:body;
+    margin-top: 50px;
+    
+}
+
+.responsive{
+    max-width: 100%;
+    height: auto;
+}
+
+.sidebar_right {
+    grid-area:sidebar_right;
+    background-color: hsl(14, 82%, 26%);
+    color: white ;
+    overflow-y: auto;
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    font-size: small;
+    margin-top: 50px;
+    height: auto;
+
+}
+
+.newsfeed {
+    text-decoration: underline;
+    
+}
+
+
+/* FOOTER NAV */
+.footer{display: flex;
+    grid-area: footer;
+    width: 90%;
+    margin: 0 auto;
+    border-top: 2px solid black;
+    
+}
+
+.center{display: flex;
+    width:fit-content;
+    margin: .5% auto;
+   
+    
+}
+
+.center>a{
+    text-decoration: none;
+    font-size: large;
+    margin: auto 35px;
+    color: black;
+    
+}
+
+.center>span{
+    font-size: larger;
+    color:gray;
+    margin-top: 2px;
+}
+
+
