@@ -1,0 +1,212 @@
+body{
+    padding: 2% 10% ;
+    height:90vh;
+    width: auto;
+    background-image: url(/Images/nza_background.jpg);
+    background-position: center;
+}
+
+
+.container{
+    padding-bottom: 1%;
+    background-color: white;
+    height:inherit;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+ /* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓   CSS GRID   ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 18% 7% 70% 5%;
+    grid-template-areas:
+    "header1 header1 header1 header1 header1"
+    /*↓↓↓↓↓↓↓↓↓↓↓↓↓↓ Modify  as needed ↓↓↓↓↓↓↓↓↓↓↓↓ */
+    "header_nav header_nav header_nav header_nav header_nav"
+    /* ------------- */
+    "body body body body body"
+    "footer footer footer footer footer" ;
+}
+
+
+.header1{grid-area:header1;
+    margin-left: 25px;}
+
+.header_nav{grid-area:header_nav;}
+
+.sidebar_left{grid-area:sidebar_left;}
+
+.body{grid-area:body;}
+
+.sidebar_right {grid-area:sidebar_right;}
+
+.footer{grid-area:footer;}
+
+/* Header Begins Here */
+
+.header1{display: flex;
+    grid-area:header1;
+    margin:0 auto 10px auto;
+    width: 90%;
+    justify-content: space-between;
+}
+
+#loginbutton{ 
+    float: right;
+    align-self: end;
+    height: 40px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;   
+}
+
+#sampleimage{display: inline-flex;
+    grid-area: header1;
+    height: 75px;
+    width: 300px;
+    align-self:flex-end;
+    
+}
+
+/* Nav Bar Begins Here */
+
+.header_nav{
+    display: flex;
+    grid-area:header_nav;
+    width: 90%;
+    margin: auto auto;
+    padding: 15px 0;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.header_nav>span{
+    font-size: 15px;
+}
+
+.header_nav>a{
+    margin: auto auto;
+    font-size: large;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+
+/* FOOTER NAV */
+.footer{display: flex;
+    width: 90%;
+    margin: 0 auto;
+    border-top: 2px solid black;
+    
+}
+
+.center{display: flex;
+    width:fit-content;
+    margin: .5% auto;
+   
+    
+}
+
+.center>a{
+    text-decoration: none;
+    font-size: large;
+    margin: auto 35px;
+    color: black;
+    
+}
+
+.center>span{
+    font-size: larger;
+    color:gray;
+    margin-top: 2px;
+}
+
+
+/* ↓↓↓↓↓↓↓↓↓↓↓↓↓↓  Jonathan CSS ↓↓↓↓↓↓↓↓↓↓↓↓↓↓  */
+
+.body{
+    width: 91%;
+    margin:10px auto;
+    display: grid;
+    grid-template-columns: 25% 60% 15%;
+    grid-template-rows: 25% 75%;
+    grid-template-areas:
+    "sidebar paragraph paragraph "
+    "sidebar table1 table2";
+}
+
+.paragraph{grid-area:paragraph ;}
+
+.table1{grid-area:table1 ;}
+
+.table2{grid-area:table2 ;}
+
+.sidebar{grid-area: sidebar;}
+
+.paragraph>p{
+    line-height: 2;
+    margin-bottom: 70px;
+}
+
+.sidebar{
+    background-image: url(/images/nav_side.jpg);
+    background-position: center;
+    height: fit-content;
+    margin-top: 20px;               
+    padding: 20px 0 ;
+    width:90%;
+    color: white;
+}                    
+
+.sidebar>h1{
+    border-bottom: 2px solid white;
+    margin: 10px auto;
+    width:80%; 
+    font-weight: lighter;
+}
+
+.sidebar>ul{
+    list-style: none;
+    width: 80%;
+    margin: auto auto;
+    padding-left: 0;
+}
+
+.sidebar>ul>p{font-size:small;
+margin: 0 0;
+}
+
+#no_bottom_margin{margin-bottom: 10px;}
+
+.sidebar li img{width: 100%;}
+
+.sidebar li{
+    margin: 20px 0;
+    padding-left: 0;
+}
+
+#table1{
+    width:95%;
+    margin-top: 10px;
+}
+
+#table2{float: left;
+    margin-top: 10px;
+    width:100%;
+    
+}
+
+
+th{
+    text-align: left; 
+    font-size: large;
+    border-bottom: 2px solid rgb(183, 183, 183);
+    padding: 5px 0;
+    
+}
+
+td{ padding-top: 5px;}
+
+
+
+/* .header1,.header_nav,.sidebar_left,.body,.sidebar_right,.footer,.table1,.table2,.sidebar{
+    border: 1px solid black;} */
+
